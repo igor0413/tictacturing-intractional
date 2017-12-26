@@ -9,12 +9,12 @@ import Home from "./containers/Home";
 
 ReactDOM.render(
   <BrowserRouter>
-    <Route path='/' component={Template}>
+    <Template>
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route path='/profile' component={Profile}/>
       </Switch>
-    </Route>
+    </Template>
   </BrowserRouter>,
   document.getElementById('root'))
 
